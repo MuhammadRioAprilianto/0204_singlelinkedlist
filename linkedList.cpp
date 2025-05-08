@@ -9,3 +9,20 @@ class node
     node *next;
 };
 
+class list
+{
+    node *START;
+
+    public:
+    list()
+    {
+        START = NULL;
+    }
+
+    void addNode()
+    {
+        int nim;
+        cout << "n\Masukkan Nomor Mahasiswa: ";
+        cin >> nim;
+    }
+};
