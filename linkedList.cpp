@@ -108,4 +108,5 @@ int main()
 {
     SingleLinkedList mhs;
     int nim;
+    int ch;
 }
