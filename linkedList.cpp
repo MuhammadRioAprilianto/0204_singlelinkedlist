@@ -108,7 +108,7 @@ int main()
 {
     SingleLinkedList mhs;
     int nim;
-    int ch;
+    char ch;
     while (1)
     {
         cout << endl
@@ -141,11 +141,11 @@ int main()
                 cout << endl
                      << "\nMasukkan no mahasiswa yang akan dihapus : ";
                 cin >> nim;
-                if (mhs.delNode(nim) == false)
-                    cout << endl
+            if (mhs.delNode(nim) == false)
+                cout << endl
                          << "Data tidak ditemukan" << endl;
-                else
-                    cout << endl
+            else
+                cout << endl
                          << "Data dengan nomor mahasiswa " << nim << " berhasil dihapus " << endl;
             }
             break;
