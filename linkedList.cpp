@@ -106,5 +106,6 @@ class SingleLinkedList
 
 int main()
 {
-    
+    SingleLinkedList mhs;
+    int nim;
 }
