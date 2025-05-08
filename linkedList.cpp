@@ -130,7 +130,30 @@ int main()
         }
         break;
         
-        
+        case '2':
+        {
+            if (mhs.listEmpty())
+            {
+                cout << endl;
+                cout << "list kosong" << endl;
+                break;
+            }
+            cout << endl;
+            cout << "\nMasukkan no mahasiswa yang dihapus : ";
+            cin >> nim;
+            if (mhs.delNode(nim) == false)
+                cout << endl;
+                cout << "Data tidak ditemukan" << endl;
+            else
+                cout << endl;
+                cout << "Data dengan nomor mahasiswa " << nim << "berhasil dihapus " << endl;
+        }
+        break;
+        case '3':
+        {
+            mhs.traverse();
+        }
+        break;
         }
 
     }
