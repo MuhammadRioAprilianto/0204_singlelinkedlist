@@ -6,12 +6,12 @@ class Node
 {
     public:
     int noMhs;
-    node *next;
+    Node *next;
 };
 
 class list
 {
-    node *START;
+    Node *START;
 
     public:
     list()
@@ -34,5 +34,18 @@ class list
             return;
         }
         nodeBaru->next = START;
+        START = nodeBaru;
+        return;
+    }
+
+    Node *previous = START;
+    Node *current = START;
+
+    while ((current != NULL) && (nim >= current->noMhs))
+    {
+        if (nim == current->noMhs)
+        {
+            cout << "\nDuplikasi noMhs tidak diijinkan\n";
+        }
     }
 };
