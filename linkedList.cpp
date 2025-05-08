@@ -55,7 +55,10 @@ class SingleLinkedList
         nodeBaru->next = current;
         previous->next = nodeBaru;
     }
-
+    bool listEmpty()
+    {
+        return (START == NULL);
+    }
     bool Search(int nim, Node **previous, Node **current)
     {
         *previous = START;
@@ -83,5 +86,20 @@ class SingleLinkedList
 
         delete current;
         return true;
+    }
+
+    void traverse()
+    {
+        if (listEmpty())
+        {
+            cout << "\nData di dalam list adalah: \n";
+            Node *currentNode = START;
+            while (currentNode != NULL)
+            {
+                cout << currentNode->noMhs << endl;
+                currentNode = currentNode->next;
+            }
+            cout << endl;
+        }
     }
 };
