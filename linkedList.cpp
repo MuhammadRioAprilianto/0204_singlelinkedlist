@@ -109,4 +109,11 @@ int main()
     SingleLinkedList mhs;
     int nim;
     int ch;
+    while (1)
+    {
+        cout << endl;
+             << "menu";
+        
+
+    }
 }
