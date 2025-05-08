@@ -111,8 +111,8 @@ int main()
     int ch;
     while (1)
     {
-        cout << endl;
-        cout << "menu";
+        cout << endl
+             << "menu";
         cout << endl;
         cout << "1. Menambah data ke dalam list" << endl;
         cout << "2. Menghapus data dari dalam list" << endl;
@@ -134,21 +134,21 @@ int main()
         {
             if (mhs.listEmpty())
             {
-                cout << endl;
-                cout << "list kosong" << endl;
+                cout << endl
+                     << "List Kosong" << endl;
                 break;
             }
-            cout << endl;
-            cout << "\nMasukkan no mahasiswa yang dihapus : ";
-            cin >> nim;
-            if (mhs.delNode(nim) == false)
-                cout << endl;
-                cout << "Data tidak ditemukan" << endl;
-            else
-                cout << endl;
-                cout << "Data dengan nomor mahasiswa " << nim << "berhasil dihapus " << endl;
-        }
-        break;
+                cout << endl
+                     << "\nMasukkan no mahasiswa yang akan dihapus : ";
+                cin >> nim;
+                if (mhs.delNode(nim) == false)
+                    cout << endl
+                         << "Data tidak ditemukan" << endl;
+                else
+                    cout << endl
+                         << "Data dengan nomor mahasiswa " << nim << " berhasil dihapus " << endl;
+            }
+            break;
         case '3':
         {
             mhs.traverse();
@@ -161,7 +161,7 @@ int main()
                 cout << "\nList Kosong\n";
                 break;
             }
-            Node *prvious, *current;
+            Node *previous, *current;
             cout << endl
                  << "Masukkan no mahasiswa yang dicari : ";
             cin >> nim;
@@ -181,7 +181,12 @@ int main()
         {
             exit(0);
         }
-        
+        break;
+        default:
+        {
+            cout << "Pilihan salah !." << endl;
+        }
+        break;
         }
 
     }
